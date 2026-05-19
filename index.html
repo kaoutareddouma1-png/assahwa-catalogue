@@ -6,6 +6,48 @@
   <title>تعاونية الصهوة | Catalogue 2026</title>
   <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
   <style>
+    .bild{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:18px;
+margin-top:50px;
+}
+.bild{
+  max-width:1180px;
+  margin:50px auto 0;
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:22px;
+}
+
+.bild-card{
+  height:260px;
+  overflow:hidden;
+  border-radius:22px;
+  border:1px solid rgba(214,173,67,.35);
+  background:#160900;
+  box-shadow:0 18px 45px rgba(0,0,0,.35);
+}
+
+.bild-card img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  transition:.45s;
+}
+
+.bild-card:hover img{
+  transform:scale(1.08);
+}
+
+@media(max-width:780px){
+  .bild{
+    grid-template-columns:1fr;
+  }
+}
+
+
     :root{
       --bg:#090400;
       --bg2:#140900;
@@ -66,7 +108,7 @@
   <div class="page">
     <nav>
       <div class="brand">تعاونية الصهوة</div>
-      <div class="links"><a href="#premium">من نحن</a><a href="#honey">معرض منتجاتنا
+      <div class="links"><a href="#uns">من نحن</a><a href="#bild">معرض منتجاتنا
 </a><a href="#honey">العسل</a><a href="#premium">فاخر</a><a href="#traditional">تقليدي</a><a href="#honey"> العروض الخاصة</a><a href="#contact">تواصل</a></div>
     </nav>
 
@@ -79,7 +121,49 @@
         <div class="pills"><span class="pill">طبيعي 100%</span><span class="pill">جودة معتمدة</span><span class="pill">توصيل لجميع مدن المغرب</span></div>
       </div>
     </section>
+<section id="uns">
 
+  <div class="section-label">
+    ABOUT US
+  </div>
+
+  <h2>
+    من نحن
+  </h2>
+
+  <p class="desc" style="max-width:950px;line-height:2.4">
+
+    تعاونية الصهوة الفلاحية هي تعاونية مغربية متخصصة
+    في المنتوجات الطبيعية الأصيلة المستخلصة من خيرات
+    جبال الأطلس المغربي.
+
+    نقدم أجود أنواع العسل الطبيعي،
+    السمن البلدي،
+    الخليع التقليدي،
+    والمنتجات الفاخرة بجودة عالية
+    واحترام للتقاليد المغربية الأصيلة.
+
+    هدفنا هو تقديم منتج طبيعي نقي يجمع بين الجودة،
+    الأصالة،
+    والثقة.
+
+  </p>
+  <section id="bild">
+  <div class="section-label">PHOTOS</div>
+  <h2>معرض منتجاتنا</h2>
+  <p class="desc">صور مختارة من منتجات تعاونية الصهوة</p>
+
+  <div class="bild">
+    <div class="bild-card"><img src="1.jpeg" alt=""></div>
+    <div class="bild-card"><img src="2.jpeg" alt=""></div>
+    <div class="bild-card"><img src="3.jpeg" alt=""></div>
+    <div class="bild-card"><img src="4.jpeg" alt=""></div>
+    <div class="bild-card"><img src="5.jpeg" alt=""></div>
+    <div class="bild-card"><img src="6.jpeg" alt=""></div>
+  </div>
+</section>
+
+</section>
     <section id="honey">
       <div class="section-label">MIELS NATURELS</div>
       <h2>تشكيلة العسل الطبيعي</h2>
