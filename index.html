@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>تعاونية الصهوة | Catalogue 2026</title>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#090400;
+      --bg2:#140900;
+      --card:#2b1603cc;
+      --card2:#3a1d05cc;
+      --gold:#d6ad43;
+      --gold2:#ffe08a;
+      --text:#fff5df;
+      --muted:#a98235;
+      --border:#6d4b15;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{
+      font-family:'Tajawal',sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(circle at top, rgba(90,48,5,.32), transparent 42%),
+        linear-gradient(180deg,var(--bg),var(--bg2));
+      min-height:100vh;
+      overflow-x:hidden;
+    }
+    body::before{
+      content:"";position:fixed;inset:0;pointer-events:none;opacity:.16;z-index:0;
+      background-image:url("data:image/svg+xml,%3Csvg width='115' height='100' viewBox='0 0 115 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23d6ad43' stroke-width='1'%3E%3Cpath d='M28 2 L86 2 L114 50 L86 98 L28 98 L0 50 Z'/%3E%3C/g%3E%3C/svg%3E");
+      background-size:115px 100px;
+    }
+    .page{position:relative;z-index:1}
+    nav{
+      position:sticky;top:0;z-index:5;display:flex;justify-content:space-between;align-items:center;
+      padding:18px 7%;background:rgba(5,2,0,.78);backdrop-filter:blur(14px);border-bottom:1px solid rgba(214,173,67,.22)
+    }
+    .brand{font-family:'Amiri',serif;color:var(--gold2);font-size:26px;font-weight:700;letter-spacing:.5px}
+    .links{display:flex;gap:28px;direction:rtl}
+    .links a{color:var(--muted);text-decoration:none;font-size:15px;transition:.3s}.links a:hover{color:var(--gold2)}
+    section{padding:90px 7%}
+    .hero{min-height:92vh;display:flex;align-items:center;justify-content:center;text-align:center;position:relative}
+    .hero-box{max-width:980px;border:1px solid rgba(214,173,67,.35);padding:90px 35px;border-radius:3px;background:linear-gradient(135deg,rgba(255,216,116,.03),rgba(0,0,0,.2));box-shadow:0 0 70px rgba(214,173,67,.08)}
+    .eyebrow{font-size:18px;letter-spacing:11px;color:var(--muted);direction:ltr;text-transform:uppercase;margin-bottom:24px}
+    h1,h2{font-family:'Amiri',serif;color:var(--gold2);font-weight:700;text-shadow:0 8px 30px rgba(214,173,67,.16)}
+    h1{font-size:74px;line-height:1.1;margin-bottom:14px} h2{font-size:58px;text-align:center;margin-bottom:18px}
+    .subtitle{font-family:'Amiri',serif;font-size:26px;color:var(--muted);margin:26px auto;max-width:760px}
+    .line{height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);width:310px;margin:30px auto;position:relative}.line::after{content:'✦';position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:#100700;padding:0 16px;color:var(--gold2)}
+    .pills{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:28px}.pill{border:1px solid rgba(214,173,67,.45);border-radius:999px;padding:10px 27px;color:var(--muted);background:rgba(45,24,5,.28)}
+    .section-label{margin:0 auto 24px;display:table;padding:10px 34px;border:1px solid rgba(214,173,67,.55);border-radius:999px;color:var(--gold2);letter-spacing:6px;font-size:13px;direction:ltr;background:rgba(83,52,8,.5)}
+    .desc{text-align:center;color:var(--muted);font-size:18px;margin:0 auto 55px;max-width:850px}
+    .grid{max-width:1180px;margin:auto;display:grid;gap:10px}
+    .product{display:grid;grid-template-columns:1fr auto;align-items:center;gap:30px;padding:28px 34px;border:1px solid rgba(214,173,67,.35);border-radius:14px;background:linear-gradient(90deg,var(--card),rgba(39,18,1,.72));transition:.35s;min-height:108px}.product:hover{transform:translateY(-3px) scale(1.005);border-color:var(--gold);box-shadow:0 18px 50px rgba(0,0,0,.28)}
+    .product h3{font-family:'Amiri',serif;font-size:31px;color:#fff;margin-bottom:9px}.product p{color:var(--muted);font-size:16px}.price{direction:ltr;display:flex;align-items:center;gap:9px;color:var(--gold2);font-weight:800;font-size:30px;white-space:nowrap}.price small{font-size:13px;color:var(--muted);font-weight:400}.tag{border:1px solid rgba(214,173,67,.35);border-radius:999px;padding:6px 13px;color:var(--gold);font-size:12px;background:rgba(255,208,71,.06)}
+    .contact{background:radial-gradient(circle at center,rgba(72,39,5,.35),transparent 55%);text-align:center}.contact-grid{max-width:980px;margin:55px auto 0;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;direction:ltr}.contact-card{border:1px solid rgba(214,173,67,.32);border-radius:18px;padding:30px 18px;background:rgba(35,18,2,.7)}.contact-card span{display:block;color:var(--muted);letter-spacing:4px;font-size:12px;margin-bottom:14px}.contact-card b{color:var(--gold2);font-size:17px}
+    footer{text-align:center;color:var(--muted);padding:28px;border-top:1px solid rgba(214,173,67,.18);background:#050200;font-size:14px;letter-spacing:2px}
+    .whatsapp{position:fixed;left:22px;bottom:22px;z-index:10;background:linear-gradient(135deg,var(--gold2),var(--gold));color:#130800;text-decoration:none;font-weight:800;border-radius:999px;padding:15px 28px;box-shadow:0 12px 35px rgba(214,173,67,.25)}
+    @media(max-width:780px){nav{padding:14px 5%}.links{gap:13px}.brand{font-size:20px}section{padding:65px 5%}h1{font-size:48px}h2{font-size:42px}.eyebrow{letter-spacing:6px;font-size:13px}.hero-box{padding:62px 18px}.product{grid-template-columns:1fr;gap:16px;text-align:right}.price{justify-content:flex-start;font-size:27px}.contact-grid{grid-template-columns:1fr}.whatsapp{padding:13px 22px}}
+  </style>
+</head>
+<body>
+  <a class="whatsapp" href="https://wa.me/212661146265" target="_blank">WhatsApp</a>
+  <div class="page">
+    <nav>
+      <div class="brand">تعاونية الصهوة</div>
+      <div class="links"><a href="#honey">العسل</a><a href="#premium">فاخر</a><a href="#traditional">تقليدي</a><a href="#contact">تواصل</a></div>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-box">
+        <div class="eyebrow">COP ASSAHWA • CATALOGUE 2026</div>
+        <h1>تعاونية الصهوة</h1>
+        <div class="line"></div>
+        <p class="subtitle">منتوجات طبيعية أصيلة من قلب جبال الأطلس المغربي</p>
+        <div class="pills"><span class="pill">طبيعي 100%</span><span class="pill">جودة معتمدة</span><span class="pill">توصيل لجميع مدن المغرب</span></div>
+      </div>
+    </section>
+
+    <section id="honey">
+      <div class="section-label">MIELS NATURELS</div>
+      <h2>تشكيلة العسل الطبيعي</h2>
+      <p class="desc">أجود أنواع العسل المغربي من مناطق الأطلس والريف — نقاء طبيعي 100%</p>
+      <div class="grid">
+        <div class="product"><div><h3>عسل أعشاب بولمان</h3><p>مزيج فاخر من أعشاب الجبال — طاقة وحيوية</p></div><div class="price"><small>درهم</small>250 <span class="tag">1 كيلو</span></div></div>
+        <div class="product"><div><h3>عسل زازمان</h3><p>من أجود أنواع العسل المغربي — نقاء جبال الأطلس</p></div><div class="price"><small>درهم</small>300 <span class="tag">1 كيلو</span></div></div>
+        <div class="product"><div><h3>عسل الدغموس</h3><p>عسل الصبار النادر — خواص علاجية مميزة</p></div><div class="price"><small>درهم</small>350 <span class="tag">Premium</span></div></div>
+        <div class="product"><div><h3>عسل الزعيترة</h3><p>مضاد طبيعي للالتهابات — من أعشاب الجبال</p></div><div class="price"><small>درهم</small>250 <span class="tag">1 كيلو</span></div></div>
+        <div class="product"><div><h3>عسل السدرة</h3><p>من شجرة السدر العريقة — فاخر وشفائي</p></div><div class="price"><small>درهم</small>250 <span class="tag">1 كيلو</span></div></div>
+        <div class="product"><div><h3>عسل ساسنو</h3><p>عسل الصنوبر — غني بمضادات الأكسدة</p></div><div class="price"><small>درهم</small>200 <span class="tag">1 كيلو</span></div></div>
+        <div class="product"><div><h3>عسل الأزهار</h3><p>مزيج من أزهار الربيع — خفيف ومنعش</p></div><div class="price"><small>درهم</small>150 <span class="tag">1 كيلو</span></div></div>
+        <div class="product"><div><h3>عسل الليمون</h3><p>منعش وخفيف — مفيد للمناعة والبرد</p></div><div class="price"><small>درهم</small>130 <span class="tag">1 كيلو</span></div></div>
+        <div class="product"><div><h3>عسل الزعتر</h3><p>مضاد للبكتيريا — خاصية علاجية قوية</p></div><div class="price"><small>درهم</small>300 <span class="tag">1 كيلو</span></div></div>
+        <div class="product"><div><h3>عسل الخروب</h3><p>طعم غني وفريد من الأعشاب البرية</p></div><div class="price"><small>درهم</small>220 <span class="tag">1 كيلو</span></div></div>
+        <div class="product"><div><h3>عسل الأوكاليبتوس</h3><p>مفيد للجهاز التنفسي — عطري وشفائي</p></div><div class="price"><small>درهم</small>220 <span class="tag">1 كيلو</span></div></div>
+      </div>
+    </section>
+
+    <section id="premium">
+      <div class="section-label">PRODUITS PREMIUM</div>
+      <h2>المنتجات الفاخرة</h2>
+      <div class="grid">
+        <div class="product"><div><h3>الخلطة الملكية</h3><p>عسل + غذاء ملكي + عكبر + حبوب لقاح — تقوية المناعة</p></div><div class="price"><small>درهم</small>500 <span class="tag">ملكي</span></div></div>
+        <div class="product"><div><h3>خلطة الطاقة</h3><p>فواكه جافة + مكسرات + عسل — طاقة طبيعية طوال اليوم</p></div><div class="price"><small>درهم</small>300 <span class="tag">طاقة</span></div></div>
+        <div class="product"><div><h3>حبوب اللقاح</h3><p>مصدر غني بالبروتين والفيتامينات — تعزيز المناعة</p></div><div class="price"><small>درهم</small>60 <span class="tag">100 غ</span></div></div>
+        <div class="product"><div><h3>العكبر — البروبوليس</h3><p>مضاد طبيعي قوي للبكتيريا والفيروسات</p></div><div class="price"><small>درهم</small>60 <span class="tag">10 غ</span></div></div>
+      </div>
+    </section>
+
+    <section id="traditional">
+      <div class="section-label">PRODUITS TRADITIONNELS</div>
+      <h2>المنتجات التقليدية</h2>
+      <div class="grid">
+        <div class="product"><div><h3>خليع الصهوة الفاسية — عادي</h3><p>محضر بالطريقة الفاسية التقليدية الأصيلة</p></div><div class="price"><small>درهم</small>140 <span class="tag">1 كيلو</span></div></div>
+        <div class="product"><div><h3>خليع للريجيم</h3><p>خليع خفيف مناسب لنظام غذائي متوازن</p></div><div class="price"><small>درهم</small>150 <span class="tag">1 كيلو</span></div></div>
+        <div class="product"><div><h3>أكيس</h3><p>منتج تقليدي مغربي من لحوم الغنم الأصيلة</p></div><div class="price"><small>درهم</small>80 <span class="tag">1 كيلو</span></div></div>
+        <div class="product"><div><h3>سمن بلدي</h3><p>سمن طبيعي 100% — للطبخ والصحة</p></div><div class="price">السعر بالطلب <span class="tag">500 مل</span></div></div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="section-label">CONTACTEZ-NOUS</div>
+      <h2>تواصلوا معنا</h2>
+      <p class="desc">نحن هنا لخدمتكم — يسعدنا استقبال طلباتكم في أي وقت</p>
+      <div class="contact-grid">
+        <div class="contact-card"><span>TÉLÉPHONE</span><b>0661 14 62 65</b></div>
+        <div class="contact-card"><span>INSTAGRAM</span><b>@assahwa12</b></div>
+        <div class="contact-card"><span>SITE WEB</span><b>assahwa.ma</b></div>
+        <div class="contact-card"><span>ADRESSE</span><b>KM 14 Route Imouzzer, Fès</b></div>
+        <div class="contact-card"><span>LIVRAISON</span><b>Tout le Maroc 🇲🇦</b></div>
+        <div class="contact-card"><span>HORAIRES</span><b>12:00 — 00:00</b></div>
+      </div>
+    </section>
+
+    <footer>تعاونية الصهوة الفلاحية • CATALOGUE 2026 • Fès — Maroc • assahwa.ma</footer>
+  </div>
+</body>
+</html>
